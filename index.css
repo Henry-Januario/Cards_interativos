@@ -1,6 +1,6 @@
 :root {
-    --primary: #ffce00;
-    --secondary: #fe4800;
+    --primary: #000a97;
+    --secondary: #e000fe;
     --dark: #212121;
     --light: f3f3f3;
 }
@@ -20,6 +20,7 @@ body {
     margin: 100px auto 0;
     width: 400px;
     height: 600px;
+    perspective: 1000px;
 }
 
 .card_inner {
@@ -84,4 +85,40 @@ body {
     z-index: -1;
     border-radius: 0 0 50% 0;
     background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary)115%);
+}
+
+.img {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 30px;
+    background-color: #fff;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card_header h2 {
+    color: #fff;
+    font-size:25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+.card_body {
+    padding: 30px;
+}
+
+.card_body h3{
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card_body p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.5;
 }
